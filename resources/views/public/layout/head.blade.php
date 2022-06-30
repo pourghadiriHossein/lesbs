@@ -25,4 +25,5 @@
     <link rel="icon" type="image/png" href="{{asset('public')}}/assets/images/favicons/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="{{asset('public')}}/assets/images/favicons/favicon-16x16.png" sizes="16x16">
     <link rel="shortcut icon" href="{{asset('public')}}/assets/images/favicons/favicon.ico">
+    @yield('css')
 </head>
