@@ -1,12 +1,23 @@
 @extends('public.layout.index')
 
 @section('content')
-    @include('public.layout.upperFooter')
+    <section class="section">
+        <div class="background-overlay" style="background-color: rgba(240,240,240,1);"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-right element-top-100 element-bottom-100 normal regular">
+
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="section">
         <div class="container container-vertical-middle">
             <div class="row vertical-middle">
                 <div class="col-md-4">
-                    <h2 class="text-left element-top-0 element-bottom-0 os-animation normal" data-os-animation="fadeIn" data-os-animation-delay="0s">چه کمکی از دست ما بر می آید</h2> </div>
+                    <h2 class="text-left element-top-0 element-bottom-0 os-animation normal" data-os-animation="fadeIn" data-os-animation-delay="0s">به ما بپیوندید</h2> </div>
                 <div class="col-md-8">
                     <hr class="element-top-0 element-bottom-0 os-animation" data-os-animation="fadeIn" data-os-animation-delay="0s"> </div>
             </div>
@@ -47,25 +58,34 @@
                                 <div class="visible-md element-height-20"></div>
                                 <div class="visible-lg element-height-20"></div>
                             </div>
-
                             <form action="" method="post" class="contact-form">
                                 <div class="row">
                                     <div class="col-md-6 pull-right">
                                         <div class="form-group form-icon-group"> <i class="fa fa-user"></i>
-                                            <input value="{{old('name')}}" class="form-control" id="name" name="name" placeholder="نام خود را وارد کنید" type="text"> </div>
+                                            <input class="form-control" id="name" name="name" placeholder="نام خود را وارد کنید" type="text"> </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="form-group form-icon-group"> <i class="fa fa-envelope"></i>
-                                            <input value="{{old('phone')}}" class="form-control" id="phone" name="phone" placeholder="شماره تماس خود را وارد کنید" type="text"> </div>
+                                        <div class="form-group form-icon-group"> <i class="fa fa-phone"></i>
+                                            <input class="form-control" id="phone" name="phone" placeholder="شماره تماس خود را وارد کنید" type="text"> </div>
                                     </div>
                                 </div>
-                                <div class="form-group form-icon-group"> <i class="fa fa-pencil"></i>
-                                    <textarea class="form-control" id="description" name="description" placeholder="پیام خود را برای ما بنویسید" rows="10">{{old('description')}}</textarea>
+                                <div class="row">
+                                    <div class="col-md-6 pull-right">
+                                        <div class="form-group form-icon-group"> <i class="fa fa-envelope"></i>
+                                            <input class="form-control" id="email" name="email" placeholder="پست الکترونیک خود را وارد کنید" type="email"> </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group form-icon-group"> <i class="fa fa-lock"></i>
+                                            <input class="form-control" id="password" name="password" placeholder="رمز عبور خود را وارد کنید" type="password"> </div>
+                                    </div>
                                 </div>
                                 <p>
-                                    <input type="submit" value="ارسال شود" class="btn btn-primary pull-right"> </p>
+                                    <input type="submit" value="ثبت کن" class="btn btn-primary pull-right">
+                                </p>
+
                                 <div class="messages text-center"></div>
                             </form>
+
                             <div class="divider-wrapper">
                                 <div class="visible-xs element-height-60"></div>
                                 <div class="visible-sm element-height-60"></div>

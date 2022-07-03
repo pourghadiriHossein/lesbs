@@ -1,20 +1,29 @@
 <div class="top-bar">
     <div class="container">
         <div class="top top-left">
-            <div class="sidebar-widget text-left small-screen-center widget_text"> Opening Hours: 09:00 - 17:00 <strong>Monday</strong> to <strong>Friday</strong> </div>
+            <div class="sidebar-widget text-left small-screen-center widget_text">
+                {{Verta::today()->format('d M Y')}}
+            </div>
         </div>
         <div class="top top-right">
             <div class="sidebar-widget text-right small-screen-center widget_nav_menu" id="nav_menu-5">
                 <div class="menu-top-bar-menu-container">
-                    <ul class="menu">
-                        <li> <a href="shop-checkout.html">Checkout</a> </li>
-                        <li> <a href="shop-terms.html">Terms</a> </li>
-                        <li> <a href="shop-faq.html">FAQ</a> </li>
-                    </ul>
+                    @if(Auth::user())
+                        <ul class="menu">
+                            <li> <a href="">ناحیه کاربری</a> </li>
+                            <li> <a href="">خروج</a> </li>
+                        </ul>
+                    @endif
+                    @if(Auth::guest())
+                        <ul class="menu">
+                            <li> <a href="{{route('login')}}">ورود</a> </li>
+                            <li> <a href="{{route('register')}}">ثبت نام</a> </li>
+                        </ul>
+                    @endif
                 </div>
             </div>
             <div class="sidebar-widget text-right small-screen-center widget_search">
-                <form action="shop-index.html" method="get" name="searchform">
+                <form action="" method="get" name="searchform">
                     <div class="input-group">
                         <input class="form-control" id="s" name="s" placeholder="Search" type="text"> <span class="input-group-btn">
                             <button class="btn btn-primary" type="submit" id="searchsubmit" value="Search">
