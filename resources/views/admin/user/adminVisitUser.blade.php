@@ -85,7 +85,7 @@
                                     <td>hossein.654321@yahoo.com</td>
                                     <td><p class="label label-default" style="background-color: gold"></p></td>
                                     <td><p class="label label-danger" style="width: 250px">غیر فعال</p></td>
-                                    <td><a class="label label-warning" href="">ویرایش</a>
+                                    <td><a class="label label-warning" href="{{ route('adminUpdateUser',1) }}">ویرایش</a>
                                     </td>
                                 </tr>
                             </tbody>

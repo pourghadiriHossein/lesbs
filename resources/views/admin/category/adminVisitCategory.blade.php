@@ -81,9 +81,9 @@
                                 <td><p class="label label-success" style="width: 250px">فعال</p></td>
                                 <td>
                                     <a class="label label-warning"
-                                       href="">ویرایش</a>
+                                       href="{{ route('adminUpdateCategory',1) }}">ویرایش</a>
                                     <a class="label label-info"
-                                       href="">افزودن +</a>
+                                       href="{{ route('adminAddParentCategory',1) }}">افزودن +</a>
                                 </td>
                             </tr>
                             </tbody>

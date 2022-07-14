@@ -79,7 +79,7 @@
                                         <a class="label label-danger" data-toggle="modal"
                                            href="#myModal1">حذف</a>
                                         <a class="label label-success"
-                                           href="">ویرایش</a>
+                                           href="{{ route('adminUpdatePermission',1) }}">ویرایش</a>
                                     </td>
 
                                     <div class="modal fade" id="myModal1" tabindex="-1" role="dialog"
@@ -100,7 +100,7 @@
                                                     <button data-dismiss="modal" class="btn btn-warning" type="button">
                                                         خیر
                                                     </button>
-                                                    <a href="" class="btn btn-danger" type="button">آری</a>
+                                                    <a href="{{ route('adminDeletePermission',1) }}" class="btn btn-danger" type="button">آری</a>
                                                 </div>
                                             </div>
                                         </div>

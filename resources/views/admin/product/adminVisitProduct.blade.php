@@ -116,7 +116,7 @@
                                                             <button data-dismiss="modal" class="btn btn-warning"
                                                                     type="button">خیر
                                                             </button>
-                                                            <a href=""
+                                                            <a href="{{ route('adminDeleteProductImage',1) }}"
                                                                class="btn btn-danger" type="button">آری</a>
                                                         </div>
                                                     </div>
@@ -128,7 +128,7 @@
                                     </td>
                                     <td>
                                         <a class="label label-warning"
-                                           href="">ویرایش</a>
+                                           href="{{ route('adminUpdateProduct',1) }}">ویرایش</a>
                                     </td>
                                 </tr>
                             </tbody>
