@@ -26,6 +26,10 @@ use Spatie\Permission\Models\Role;
 
 class AdminController extends Controller
 {
+    public function test()
+    {
+        return view('test');
+    }
     //index
     public function adminIndex()
     {
